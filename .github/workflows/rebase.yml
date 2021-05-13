@@ -17,3 +17,5 @@ jobs:
         uses: cirrus-actions/rebase@1.4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: echo an error occured.
+        if: failure()
